@@ -5,87 +5,42 @@
 		<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		<meta charset="utf-8">
-		<meta description="gra">
-		<meta keywords="gra">
+		<meta description="karuzela jquery">
+		<meta keywords="jquery karuzela">
 		
-		<title>Zadanie 8.12 Gra</title>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+		<title>Zadanie 9.3 karuzela jquery</title>
+		
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			
 		
 	</head>
 		
 	<body>
-		
-		<div class="container">
-			<h3 class="text-center"> Witaj w grze 
-				<span class="label label-default">Kamień</span>
-				<span class="label label-info">Papier</span>
-				<span class="label label-danger">Nożyce</span> 
-			</h3>
-		</div>
-		
-		<div id="js-newGameElement" class="container">
-			<div class="row text-center">
-				<button id="js-newGameButton" class="btn btn-default"> Nowa Gra </button>
+			<div id = 'carousel'>
+				<div id='btn-left' class='btn'> < </div>
+				<div id='btn-right' class='btn'> > </div>
+				
+				<ul>
+					<li> <img src='images/1958-1960_Holden_FC_utility_01.jpg'> </li>
+					<li> <img src='images/1987_chev_nova.jpg'> </li>
+					<li> <img src='images/89_Tercel.jpg'> </li>
+					<li> <img src='images/Civic_2g.jpg'> </li>
+					<li> <img src='images/Lepatron_4.jpeg'> </li>
+					<li> <img src='images/Mg_mga1960.jpg'> </li>
+					<li> <img src='images/Nagpur_Semi-Luxury_(Asiad).jpg'> </li>
+					<li> <img src='images/Polski_Fiat_126p_and_Trabant_used_as_advertisement_in_Wroc%C5%82aw.jpg'> </li>
+				</ul>
+				
 			</div>
-		</div>
-		
-		<div id="js-playerPickElement" class="container">
-			<div class="row text-center">
-				<button id="js-playerPick_rock" class="btn">
-					<span class="badge"> <i class="fa fa-hand-rock-o" aria-hidden="true"></i> </span> Kamień
-				</button>
-				<button id="js-playerPick_paper" class="btn"> 
-					<span class="badge"> <i class="fa fa-hand-paper-o" aria-hidden="true"></i> </span> Papier
-				</button> 
-				<button id="js-playerPick_scissors" class="btn"> 
-					<span class="badge"> <i class="fa fa-hand-scissors-o" aria-hidden="true"></i> </span> Nożyce
-				</button>
-			</div>
-		</div>
-		
-		<div id="js-resultsTableElement" class="container">
-			<div class="row">
-				<div class="col-xs-5 text-center">
-					<span id="js-playerPoints" class="badge"> 0 </span>
-					<span id="js-playerName"> Imię gracza </span>
-				</div>
-				<div class="col-xs-2 text-center"> VS. </div>
-				<div class="col-xs-5 text-center"> 
-					<span id="js-computerPoints" class="badge"> 0 </span> Komputer
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-5 text-center"> 
-					<span id="js-playerPick"> Wybór gracza </span>
-				</div>
-				<div class="col-xs-2"></div>
-				<div class="col-xs-5 text-center">
-					<span id="js-computerPick"> Wybór komputera </span>
-				</div>
+			<div id = 'ctrl'>
+				<ul></ul>
 			</div>
 			
-			<div class="row"> 
-				<div class="col-xs-5 text-center">
-					<span id="js-playerResult"> Wynik gracza </span> 
-				</div>
-				<div class="col-xs-2"></div>
-				<div class="col-xs-5 text-center">
-					<span id="js-computerResult"> Wynik komputera </span>
-				</div>
-			</div>
-		</div>
 		
-		<div id="js-totalScore" class="row">
-			<div  class="col-xs-4"></div>
-			<div  class="col-xs-4">
-				<span id="js-winner" class="label label-success"> </span> 
-			</div>
-			<div  class="col-xs-4"></div>
-		</div>
+		
+		
+		
 		<script type="text/javascript" src="js/scripts.js"></script>
-		
-		
 	</body>
 </html>

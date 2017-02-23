@@ -20,8 +20,8 @@ $(function () {
 				index < (numbOfImages - 1) ? index++ : index = 0;
 				var pointer = "#li" + index;
 				
-				$("#ctrl li").removeClass("pointer").addClass("circle");
-				$(pointer).removeClass("circle").addClass("pointer");
+//				$("#ctrl li").removeClass("pointer").addClass("circle");
+//				$(pointer).removeClass("circle").addClass("pointer");
 				carouselList.animate({marginLeft: -1 * CONSTANT.CAROUSEL_FRAME_WIDTH}, time, function(){
 					moveSlide(CONSTANT.SLIDE_FIRST)
 				});
@@ -31,13 +31,16 @@ $(function () {
 				index > 0 ? index-- : index = numbOfImages - 1;				
 				var pointer = "#li" + index;
 				
-				$("#ctrl li").removeClass("pointer").addClass("circle");
-				$(pointer).removeClass("circle").addClass("pointer");
+//				$("#ctrl li").removeClass("pointer").addClass("circle");
+//				$(pointer).removeClass("circle").addClass("pointer");
 				carouselList.animate({'marginLeft':0}, time, function(){
 					moveSlide(CONSTANT.SLIDE_LAST)
 				});
 				break;
 		}
+		
+		$("#ctrl li").removeClass("pointer").addClass("circle");
+		$(pointer).removeClass("circle").addClass("pointer");
 		
 	}
 	
@@ -54,8 +57,7 @@ $(function () {
 				
 				lastItem.after(firstItem);
 			
-				carouselList.css('margin-left', 0);
-				console.log('a qq');			
+				carouselList.css('margin-left', 0);			
 				break;
 				
 			case CONSTANT.SLIDE_LAST:
